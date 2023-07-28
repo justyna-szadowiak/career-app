@@ -1,0 +1,13 @@
+$PoppinsPath: "./assets/poppins-font";
+$PoppinsVersion: "1.1.0" !default;
+
+@mixin fontdefault ($PoppinsPath, $PoppinsVersion, $FontType: "Regular") {
+  src: url("#{$PoppinsPath}/Poppins-#{$FontType}.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  @include fontdefault ($PoppinsPath, $PoppinsVersion, "Regular");
+  font-weight: normal;
+  font-style: normal;
+}

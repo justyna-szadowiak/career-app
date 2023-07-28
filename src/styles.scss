@@ -1,0 +1,49 @@
+@use '@angular/material' as mat;
+@import "./app/app.component.scss";
+@import "./poppins.scss";
+
+//THEME
+
+$primary: #000000;
+$secoundary: #808080;
+$card-background: #14171a;
+$btn-discord: #5865f2;
+$btn-login: #303236;
+$text-login: #103366;
+$text-green: #04E08A;
+$text-white: #fff;
+$text-dark-green: #082618;
+$special-grey: #14171a;
+$special-divider-grey: #2b2e30;
+$special-green: #82edba;
+$special-light-green: #bef0ea;
+$special-saturated-green: #04E08A;
+$special-saturated-blue: #05CEF2;
+
+$angular-primary: mat.define-palette(mat.$teal-palette, 500, 100, 900);
+$angular-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$angular-warn: mat.define-palette(mat.$red-palette);
+
+$angular-dark-theme: mat.define-dark-theme(
+  (
+    color: (
+      primary: $angular-primary,
+      accent: $angular-accent,
+      warn: $angular-warn,
+    ),
+  )
+);
+
+.dark-mode {
+  @include mat.all-component-colors($angular-dark-theme);
+}
+
+$font-family-poppins: "Poppins", sans serif;
+
+html, body {
+  height: 100%;
+  background-color: $primary;
+  font-family: $font-family-poppins !important;
+}
+
+body { margin: 0}

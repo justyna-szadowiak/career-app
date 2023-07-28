@@ -1,0 +1,19 @@
+@import "./../../styles.scss";
+
+.footer__links {
+  font-size: 10px;
+  font-weight: 400;
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 4px;
+  letter-spacing: -0.5px;
+}
+
+.footer__copyright {
+  font-size: 10px;
+  font-weight: 400;
+  color: $secoundary;
+  text-align: center;
+  margin-bottom: 22px;
+}

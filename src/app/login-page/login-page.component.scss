@@ -1,0 +1,67 @@
+@import "./../../styles.scss";
+
+img {
+      text-align: center;
+      margin-left: 60px;
+      margin-top: 110px;
+}
+
+button {
+  color: #FFFFFF;
+  align-items: center;
+  width: 250px;
+  height: 48px;
+  margin-left: 63px;
+  padding: 14px, 45px;
+}
+
+.btn-discord:not(:disabled) {
+  background-color: $btn-discord;
+  text-transform: uppercase;
+}
+
+.btn-login:not(:disabled) {
+  background-color: $btn-login;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.main {
+  position: relative;
+
+  .bottom-text {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 10px;
+    text-align: center;
+  }
+}
+
+.logo {
+  position: relative;
+
+  .logo-name {
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 376px) {
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .button-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-discord:not(:disabled) {
+    text-transform: capitalize;
+  }
+
+  .btn-login:not(:disabled) {
+    text-transform: capitalize;
+  }
+}

@@ -1,0 +1,32 @@
+<button (click)="onToggle()" class="burger">
+  <img src="../../assets/img/burger-bar.svg" alt="" [ngClass]="{'hidden': showMenu}">
+</button>
+<div [ngClass]="{'hidden': !showMenu && !(isDesktop$ | async)}" class="menu">
+  <div class="menu__top">
+    <div class="flex-space-between">
+      <img src="../../assets/img/login-logo-name.svg" alt="" class="logo-mobile">
+      <img src="../../assets/img/logo-desktop.svg" alt="" class="logo-desktop">
+      <button (click)="onToggle()">
+        <img src="../../assets/img/menu-close.svg" alt="" class="menu__close">
+      </button>
+    </div>
+    <ul class="menu-container">
+      <ng-container *ngFor="let item of menuItems">
+        <li class="menu__top__item" *ngIf="!(isDesktop$ | async) || item.isDesktopAvailable">
+          <a [routerLink]="item.link">{{item.title}}</a>
+        </li>
+      </ng-container>
+    </ul>
+  </div>
+  <div class="menu__bottom">
+    <button mat-stroked-button class="btn btn-member">
+      <span class="flex-space-between">Membership
+      <img src="../../assets/img/green-right-arrow.svg"></span>
+    </button>
+    <button mat-stroked-button class="btn btn-login" (click)="navigationToLogin()">
+      <span class="flex-space-between">Login
+      <img src="../../assets/img/black-right-arrow.svg"></span>
+    </button>
+    <app-footer [isHidden]="isDesktop$ | async"></app-footer>
+  </div>
+</div>
