@@ -19,7 +19,7 @@ button {
   z-index: 1;
 }
 
-.menu__close {
+.menu-close {
   padding-right: 10px;
   filter: invert(80%);
   height: 30px;
@@ -38,7 +38,7 @@ button {
   top: 0;
   background-color: $primary;
 
-  .menu__top{
+  .menu-top{
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -58,7 +58,7 @@ button {
     ul {
       padding: 34px 0 0 22px;
 
-      .menu__top__item {
+      .menu-item {
         list-style-type: none;
         font-size: 18px;
         font-weight: 400;
@@ -73,7 +73,7 @@ button {
     }
   }
 
-  .menu__bottom{
+  .menu-bottom{
     .btn {
       width: 239px;
       height: 49px;
@@ -123,7 +123,7 @@ button {
     flex-direction: row;
     background-color: transparent;
 
-    .menu__top {
+    .menu-top {
       display: flex;
       flex-direction: row;
 
@@ -143,7 +143,7 @@ button {
         display: flex;
         padding: 0;
 
-        .menu__top__item {
+        .menu-item {
           font-size: 14px;
           font-weight: 500;
           margin-top: 21px;
@@ -151,12 +151,12 @@ button {
         }
       }
 
-      .menu__close {
+      .menu-close {
         visibility: hidden;
       }
     }
 
-    .menu__bottom {
+    .menu-bottom {
       display: flex;
       flex-direction: row;
       align-items: center;

@@ -1,6 +1,6 @@
 @import "./../../styles.scss";
 
-.footer__links {
+.footer-links {
   font-size: 10px;
   font-weight: 400;
   color: #fff;
@@ -10,10 +10,17 @@
   letter-spacing: -0.5px;
 }
 
-.footer__copyright {
+.footer-copyright {
   font-size: 10px;
   font-weight: 400;
   color: $secoundary;
   text-align: center;
   margin-bottom: 22px;
+}
+
+@media screen and (min-width: 376px) {
+  .footer {
+    margin-top: 56px;
+    background-color: $special-grey;
+  }
 }

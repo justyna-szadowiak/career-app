@@ -43,6 +43,7 @@ mat-card{
     font-weight: 700;
     margin: 17px 0 11px 18px;
     line-height: 29px;
+    color: #CCCCCC;
   }
 
   mat-card-content{
@@ -57,7 +58,7 @@ mat-card{
       flex-direction: column;
       margin: -1px 0 2px 0;
 
-      .advantages__list{
+      .advantages-list{
         font-size: 12px;
         font-weight: 400;
         color: #CCCCCC;
@@ -79,10 +80,10 @@ mat-card{
     display: flex;
     flex-direction: column;
 
-    .skills__list {
+    .skills-list {
       margin: -7px 0 2px -21px;
     }
-    .skills__list:nth-child(n + 1) {
+    .skills-list:nth-child(n + 1) {
       line-break: auto;
     }
   }
@@ -148,12 +149,12 @@ mat-card-footer {
 .footer-card-2nd{
   height: 60px;
 
-  .footer-card-2nd__p {
+  .footer-card-2nd-p {
     line-height: 17px;
     margin-top: -5px;
   }
 
-  .footer-card-2nd__img {
+  .footer-card-2nd-img {
     margin: 0 14px 17px 0;
   }
 }
