@@ -1,10 +1,28 @@
 <div *ngIf="!isHidden" class="footer">
-  <div class="footer-links">
-    <p>Privacy Policy</p>
-    <p>Refund Policy</p>
-    <p>Terms & Conditions</p>
-  </div>
-  <p class="footer-copyright">
-    © Copyright 2022 - Xtrades. All rights reserved.
-  </p>
+  <ng-container *ngIf="(isDesktop$ | async) then desktop; else mobile"></ng-container>
+
+  <ng-template #mobile>
+    <div class="footer-links">
+      <p>Privacy Policy</p>
+      <p>Refund Policy</p>
+      <p>Terms & Conditions</p>
+    </div>
+    <p class="footer-copyright">
+      © Copyright 2022 - Company. All rights reserved.
+    </p>
+  </ng-template>
+
+  <ng-template #desktop>
+    <div class="footer-links">
+      <p>Billing & General Support <br>hello@mail.net</p>
+      <p>Los Angeles, CA 90000 <br>1-230-452-6777</p>
+      <p>Privacy Policy</p>
+      <p>Refund Policy</p>
+      <p>Terms & Conditions</p>
+    </div>
+    <app-social-media></app-social-media>
+    <p class="footer-copyright">
+      © Copyright 2022 - Company. All rights reserved.
+    </p>
+  </ng-template>
 </div>

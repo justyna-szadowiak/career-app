@@ -14,6 +14,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import {MatMenuModule} from '@angular/material/menu';
 import {LayoutModule} from '@angular/cdk/layout';
 import {MatListModule} from '@angular/material/list';
+import { SocialMediaComponent } from './social-media/social-media.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import {MatListModule} from '@angular/material/list';
     MainPageComponent,
     MenuComponent,
     FooterComponent,
+    SocialMediaComponent,
   ],
   imports: [
     BrowserModule,
