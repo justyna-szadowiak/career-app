@@ -35,7 +35,7 @@ mat-card{
 
   mat-divider {
     border-top-color: $special-divider-grey;
-    margin-top: 21px;
+    margin-top: 10px;
   }
 
   mat-card-title {
@@ -83,6 +83,7 @@ mat-card{
     .skills-list {
       margin: -7px 0 2px -21px;
     }
+
     .skills-list:nth-child(n + 1) {
       line-break: auto;
     }
@@ -119,15 +120,16 @@ mat-card{
   }
 }
 
+
 .main-card {
   margin-top: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .footer-card {
   color: $text-white;
-  margin-top: 31px ;
-  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
   .footer-content-card {
     margin: 10px 0 0 0;
