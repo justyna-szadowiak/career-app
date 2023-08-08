@@ -1,0 +1,62 @@
+<div class="container">
+  <div>
+    <h1 class="title">We’re Hiring</h1>
+    <mat-list>
+      <mat-divider class="divider"></mat-divider>
+      <mat-list-item>
+        <div matListItemTitle>Film Editor and Creator for<br>
+          Trading Content</div>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <div matListItemTitle class="opacity">Full Stack Principal Software<br>
+          Developer</div>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <div matListItemTitle class="opacity">Sr Principal Software Engineer -<br>
+          C++ Programmer</div>
+      </mat-list-item>
+    </mat-list>
+  </div>
+  <div>
+    <mat-card class="main-content">
+        <img matCardImage src="../../assets/img/image-desktop.png" alt="" class="content-img">
+        <div>
+          <mat-card-title class="card-title">
+            Hiring a Film Editor and Creator for <br>
+            Trading Content
+          </mat-card-title>
+          <mat-card-content class="card-content">
+            We're looking to increase our exposure on social media, by creating more
+            content (specifically Youtube Videos + shorts and Reels on Instagram)<br>
+            <ul class="list">
+              <li class="point-list">
+                You will be provided with Living rent free with me<br>
+                (Either in Los Angeles or New York, open to be discussed)
+              </li>
+              <li class="point-list">Compensation is negotiable (DM to discuss)</li>
+              <li class="point-list">Become a Partner</li>
+            </ul>
+          </mat-card-content>
+          <mat-card-subtitle class="card-subtitle">Skills Needed (Most to Least Important)</mat-card-subtitle>
+          <mat-card-content>
+            <ul class="skills-list">
+              <li *ngFor="let skill of skills" class="skill">{{skill.name}}</li>
+            </ul>
+          </mat-card-content>
+          <mat-divider class="card-divider"></mat-divider>
+          <mat-card-content class="contactUs-section">
+            <div class="contact-content">
+              <p>
+                Contact us at <a href="mailto:mail@mail.net">mail@mail.net</a> and include<br>
+                information about your previous works and <br>
+                experience to set up an interview.
+              </p>
+            </div>
+            <button mat-button class="btn-contact">CONTACT US NOW</button>
+          </mat-card-content>
+        </div>
+    </mat-card>
+  </div>
+</div>

@@ -17,6 +17,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MobileContentComponent } from './mobile-content/mobile-content.component';
+import { DesktopContentComponent } from './desktop-content/desktop-content.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { MobileContentComponent } from './mobile-content/mobile-content.componen
     FooterComponent,
     SocialMediaComponent,
     MobileContentComponent,
+    DesktopContentComponent,
   ],
   imports: [
     BrowserModule,

@@ -23,10 +23,12 @@
       <span class="flex-space-between">Membership
       <img src="../../assets/img/green-right-arrow.svg"></span>
     </button>
-    <button mat-stroked-button class="btn btn-login" (click)="navigationToLogin()">
-      <span class="flex-space-between">Login
-      <img src="../../assets/img/black-right-arrow.svg"></span>
-    </button>
+    <div class="btn-desktop">
+      <button mat-stroked-button class="btn btn-login" (click)="navigationToLogin()">
+        <span class="flex-space-between">Login
+        <img src="../../assets/img/black-right-arrow.svg"></span>
+      </button>
+    </div>
     <app-footer [isHidden]="isDesktop$ | async"></app-footer>
   </div>
 </div>

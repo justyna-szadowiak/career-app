@@ -169,12 +169,18 @@ button {
         }
       }
 
+      .btn-desktop {
+        margin-top: 10px;
+      }
+
       .btn-member {
         text-align: center;
         width: 117px;
         height: 36px;
         padding: 12px 20px;
         text-transform: initial;
+        border-radius: 10px;
+        border: 1px solid;
       }
 
       .btn-login {
