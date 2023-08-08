@@ -1,17 +1,17 @@
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { BreakpointObserver } from '@angular/cdk/layout';
 import { Component } from '@angular/core';
-import { Observable, Subject, map, switchMap, takeUntil, tap } from 'rxjs';
+import { Observable, Subject, map } from 'rxjs';
 import { desktop } from '../breakpoints';
 
-export interface Skills {
+export interface Skill {
   id: number,
-  skill: string
+  name: string
 }
 
 @Component({
   selector: 'app-main-page',
   templateUrl: './main-page.component.html',
-  styleUrls: ['./main-page.component.scss']
+  styleUrls: ['./main-page.component.scss'],
 })
 export class MainPageComponent {
   destroyed = new Subject<void>();
@@ -20,26 +20,26 @@ export class MainPageComponent {
   constructor(private breakpointObserver: BreakpointObserver) {
   }
 
-  skills: Skills[] = [
+  skills: Skill[] = [
     {
       id: 0,
-      skill: 'Short Form Video Editing'
+      name: 'Short Form Video Editing'
     },
     {
       id: 1,
-      skill: 'Lighting and Content Creation Setting Management'
+      name: 'Lighting and Content Creation Setting Management'
     },
     {
       id: 2,
-      skill: 'Videography'
+      name: 'Videography'
     },
     {
       id: 3,
-      skill: 'Photography'
+      name: 'Photography'
     },
     {
       id: 4,
-      skill: 'Longform Video Editing'
+      name: 'Longform Video Editing'
     }
   ];
 }

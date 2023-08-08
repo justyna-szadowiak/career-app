@@ -1,0 +1,75 @@
+<h1>We’re Hiring</h1>
+<mat-card class="main-card">
+  <mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                          (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="expansion-header">
+            <mat-panel-title class="main-title">Film Editor and Creator for Trading Content</mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-divider></mat-divider>
+        <mat-card-title>
+          Hiring a Film Editor and <br>
+          Creator for Trading Content
+        </mat-card-title>
+        <mat-card-content>
+          We're looking to increase our exposure on social
+          media, by creating more content (specifically<br>
+          Youtube Videos + shorts and Reels on Instagram)<br>
+        <ul class="advantages">
+          <li class="advantages-list">
+            You will be provided with Living rent free with
+            me (Either in Los Angeles or New York, open<br>
+            to be discussed)
+          </li>
+          <li class="advantages-list">Compensation is negotiable (DM to discuss)</li>
+          <li class="advantages-list">Become a Partner</li>
+        </ul>
+      </mat-card-content>
+      <mat-card-subtitle class="subtitle-bold">Skills Needed (Most to Least Important)</mat-card-subtitle>
+      <mat-card-content>
+        <ul *ngFor="let skill of skills" class="skills">
+          <li class="skills-list">{{skill.name}}</li>
+        </ul>
+      </mat-card-content>
+      <mat-divider></mat-divider>
+      <mat-card-content class="contact-section">
+        <p>
+          Contact us at <a href="mailto:mail@mail.net">mail@mail.net</a> and include information
+          about your previous works and experience<br>
+          to set up an interview.
+        </p>
+      </mat-card-content>
+      <button mat-button class="btn-contact">CONTACT US NOW</button>
+    </mat-expansion-panel>
+  </mat-accordion>
+</mat-card>
+
+<mat-card class="footer-card">
+  <mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                          (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title class="footer-content-card">
+          <p>Full Stack Principal Software Developer</p>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+
+    </mat-expansion-panel>
+  </mat-accordion>
+</mat-card>
+
+<mat-card class="footer-card-2nd">
+  <mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                          (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title class="footer-content-card">
+          <p class="footer-card-2nd-p">
+            Sr Principal Software Engineer <br>
+            - C++Programmer
+          </p>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+    </mat-expansion-panel>
+  </mat-accordion>
+</mat-card>
